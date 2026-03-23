@@ -26,7 +26,7 @@ const dom = {
 // ── API ENDPOINTS ──────────────────────────────────────────
 const API = {
   dog:  'https://dog.ceo/api/breeds/image/random',
-  joke: 'https://v2.jokeapi.dev/joke/Any?safe-mode&type=twopart',
+  joke: 'https://icanhazdadjoke.com/',
   user: 'https://randomuser.me/api/',
   post: 'https://jsonplaceholder.typicode.com/posts/',
 };
@@ -336,12 +336,15 @@ async function fetchJoke() {
   showLoading(container);
 
   try {
-    const data = await apiFetch(API.joke);
+    const res = await fetch(API.joke, {
+      headers: { 'Accept': 'application/json' }
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
 
     container.innerHTML = `
       <div class="joke-result">
-        <p class="joke-result__setup">${data.setup}</p>
-        <p class="joke-result__punchline">— ${data.delivery}</p>
+        <p class="joke-result__punchline" style="line-height: 1.8; margin-bottom: 0.5rem;">${data.joke}</p>
         <div class="joke-result__actions">
           <button class="btn btn--sm" id="btn-joke-next" type="button">◆ NEXT JOKE</button>
         </div>
