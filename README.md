@@ -1,84 +1,82 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/l0ExhcMymdL6TrZ84/giphy.gif" width="100%" alt="Art Deco Header Banner" style="max-height: 200px; object-fit: cover; border: 2px solid #D4AF37;">
-
-  <br />
   <br />
 
-  <h1 style="color: #D4AF37; font-family:serif;">✨ PUBLIC API PLAYGROUND ✨</h1>
-  <h3><i>The "Gatsby" Edition — Explore Real APIs in Luxury</i></h3>
+  <h1>✏️ PUBLIC API PLAYGROUND ✏️</h1>
+  <h3><i>The "Sketchbook" Edition — Explore Real APIs on Paper</i></h3>
   
   <p>
-    An interactive playground to explore real public APIs — fetch random dogs, jokes, user profiles, and posts in a <b>visually stunning, highly-polished Art Deco interface</b>.
+    An interactive playground to explore real public APIs — fetch random dogs, jokes, user profiles, and posts in a <b>playful, hand-drawn sketchbook interface</b>.
   </p>
 
   <p>
-    <a href="#-features"><img src="https://img.shields.io/badge/Features-Gold-D4AF37?style=for-the-badge&logoColor=1A1A1A&color=D4AF37" alt="Features"></a>
-    <a href="#-tech-stack"><img src="https://img.shields.io/badge/Tech_Stack-Vanilla_JS-0A0A0A?style=for-the-badge&logoColor=F2F0E4&color=0A0A0A" alt="Tech Stack"></a>
-    <a href="#-apis-used"><img src="https://img.shields.io/badge/APIs-4_Available-D4AF37?style=for-the-badge&logoColor=1A1A1A&color=D4AF37" alt="APIs"></a>
+    <a href="#-features"><img src="https://img.shields.io/badge/Features-Sketched-ff4d4d?style=for-the-badge&logoColor=2d2d2d&color=ff4d4d" alt="Features"></a>
+    <a href="#-tech-stack"><img src="https://img.shields.io/badge/Tech_Stack-Vanilla_JS-fdfbf7?style=for-the-badge&logoColor=2d2d2d&color=fdfbf7" alt="Tech Stack"></a>
+    <a href="#-apis-used"><img src="https://img.shields.io/badge/APIs-4_Available-2d5da1?style=for-the-badge&logoColor=fdfbf7&color=2d5da1" alt="APIs"></a>
   </p>
 </div>
 
 ---
 
-## 🏛️ The Design Philosophy
+## ✏️ The Design Philosophy
 
-This project rejects the modern "soft SaaS" minimalism in favor of **maximalist restraint**. It embraces the visual language of the machine age meeting high society, combining **opulence, mathematical precision, and architectural grandeur.**
+This project celebrates **authentic imperfection and human touch** in a digital world. It rejects the clinical precision of modern UI design in favor of organic, playful irregularity — like sketches on notebook paper, sticky notes on a wall, and napkin diagrams from a brainstorming session.
 
-> *"Art Deco is the visual embodiment of the Roaring Twenties — an era of jazz, prosperity, and unbridled optimism."*
+> *"No straight lines. No perfect circles. Just pencil, paper, and a whole lot of personality."*
 
 ### 🎨 Visual Signatures
-- **Obsidian & Gold Palette**: Deep `#0A0A0A` blacks paired with radiant metallic `#D4AF37` gold.
-- **Sharp Geometry**: 0px border radii, stepped ziggurat corners, and rotated diamond containers.
-- **Theatrical Animations**: 3D perspective tilts, sunburst radial gradients, and scroll-triggered reveals.
-- **Champagne Particle System**: A custom canvas-based particle engine featuring floating gold dust that gently repels from the user's cursor.
-- **Classical Typography**: High-contrast pairing of *Marcellus* (headings) and *Josefin Sans* (body text).
+- **Warm Paper Palette**: Soft `#fdfbf7` paper background with pencil-black `#2d2d2d` foreground.
+- **Wobbly Borders**: Every container, button, and card uses irregular border-radius values for hand-drawn edges.
+- **Hard Offset Shadows**: Solid `4px 4px 0px` cut-paper shadows — no blur, ever.
+- **Dot-Grid Texture**: Subtle notebook-style dot pattern on the background via CSS `radial-gradient`.
+- **Handwritten Typography**: *Kalam* (headings) and *Patrick Hand* (body text) — never corporate.
+- **Sketchy Decorations**: Tape strips, thumbtack pins, hand-drawn SVG arrows, squiggly connectors, and wavy underlines.
 
 ---
 
 ## ⚡ Features
 
-### 1. Interactive 3D & Particle Engine 🪄
-The background features a full-page **HTML5 Canvas particle system** with floating gold particles that react to your mouse movements. Hero titles and result cards feature **interactive 3D CSS tilt effects** for a tactile, "premium" feel.
+### 1. Playful Interactions 🪄
+Sections feature **scroll-triggered reveals** and a **jiggle hover effect** — cards and icons rotate slightly on hover for a spontaneous, sketchy feel. Buttons "press flat" on click by losing their shadow.
 
 ### 2. Four Unique API Explorers 🔍
 
 <details open>
-<summary><b style="font-size: 1.2rem; color: #D4AF37; cursor:pointer;">🐶 Dog Finder</b></summary>
+<summary><b>🐶 Dog Finder</b></summary>
 <br/>
 Fetches a random image of a dog breed from the <a href="https://dog.ceo/dog-api/">Dog API</a>.
 <ul>
-  <li>Images presented in luxury double-border frames.</li>
+  <li>Images presented in wobbly, hand-drawn frames with rotation.</li>
   <li>Custom URL parsing to extract and format the exact breed name.</li>
-  <li>Built-in "Copy URL" functionality with custom toast notifications.</li>
+  <li>Built-in "Copy URL" with sticky-note toast notifications.</li>
 </ul>
 </details>
 
 <details open>
-<summary><b style="font-size: 1.2rem; color: #D4AF37; cursor:pointer;">😂 Joke Generator</b></summary>
+<summary><b>😂 Joke Generator</b></summary>
 <br/>
-Delivers random two-part jokes using the <a href="https://github.com/15Dkatz/official_joke_api">Official Joke API</a>.
+Delivers random jokes using the <a href="https://icanhazdadjoke.com/">icanhazdadjoke API</a>.
 <ul>
-  <li>Highlights punchlines with a glowing cyan-gold effect.</li>
+  <li>Punchlines highlighted in red marker accent color.</li>
 </ul>
 </details>
 
 <details open>
-<summary><b style="font-size: 1.2rem; color: #D4AF37; cursor:pointer;">👤 Random User</b></summary>
+<summary><b>👤 Random User</b></summary>
 <br/>
 Generates fictional identities from around the world using the <a href="https://randomuser.me/">Random User Generator</a>.
 <ul>
-  <li>Displays high-res avatars in perfectly circular, glowing gold frames.</li>
-  <li>Pulls comprehensive data including name, email, location, age, and phone number.</li>
+  <li>Avatars displayed in organic, blob-shaped frames.</li>
+  <li>Full data: name, email, location, age, and phone number.</li>
 </ul>
 </details>
 
 <details open>
-<summary><b style="font-size: 1.2rem; color: #D4AF37; cursor:pointer;">📄 Post Viewer</b></summary>
+<summary><b>📝 Post Viewer</b></summary>
 <br/>
 Fetches sample mock-data posts from <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a>.
 <ul>
-  <li>Cycles sequentially through a catalog of 100 mock posts.</li>
-  <li>Displays elegant typography for title and body formatting.</li>
+  <li>Cycles sequentially through 100 mock posts.</li>
+  <li>Drop-cap first letter and post-it style ID tags.</li>
 </ul>
 </details>
 
@@ -86,19 +84,17 @@ Fetches sample mock-data posts from <a href="https://jsonplaceholder.typicode.co
 
 ## 🛠️ Tech Stack
 
-This project was built deliberately with **Zero Frameworks**. It relies purely on the foundational web triad to maximize performance and demonstrate core engineering fundamentals:
+Built with **Zero Frameworks** — purely the foundational web triad:
 
 | Core Technology | Usage Overview |
 | :--- | :--- |
-| **HTML5** | Semantic structure, accessibility features (`aria-hidden`), `<canvas>` element for the particle engine. |
-| **CSS3** | Extensive use of custom properties (variables), `clip-path` geometry, 3D `perspective` math, overlapping pseudo-elements, complex keyframe animations. |
-| **Vanilla JS** | Modern `async/await` fetch logic, `IntersectionObserver` for scroll reveals, `requestAnimationFrame` for the 60FPS particle loop, and 3D pointer geometry calculations. |
+| **HTML5** | Semantic structure, accessibility (`aria-hidden`), inline SVG decorations. |
+| **CSS3** | Custom properties, irregular `border-radius` for wobbly shapes, `radial-gradient` dot-grid texture, hard offset shadows, handwritten font pairing. |
+| **Vanilla JS** | Modern `async/await` fetch, `IntersectionObserver` for scroll reveals, random-rotation jiggle hover effects. |
 
 ---
 
 ## 🚀 Getting Started
-
-To run this beautifully crafted playground locally:
 
 1. **Clone the repository:**
    ```bash
@@ -106,18 +102,17 @@ To run this beautifully crafted playground locally:
    cd fetcher
    ```
 2. **Serve the files locally:**
-   You can use any local web server. For instance, with Python:
    ```bash
    python3 -m http.server 8080
    ```
 3. **Open the application:**
-   Navigate your browser to `http://localhost:8080` (or whichever port your server is using).
+   Navigate to `http://localhost:8080`
 
 ---
 
 <p align="center">
   <br/>
-  ◆ ◆ ◆
+  ✏️ ~ ✏️ ~ ✏️
   <br/>
-  <i>Crafted with precision & public APIs.</i>
+  <i>Sketched with pencils & public APIs.</i>
 </p>
